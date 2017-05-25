@@ -181,7 +181,7 @@
     },
     {
       "width": 1280,
-      "height": 720,
+      "height": 700,
       "module": "%application%/appui/layouts/720p",
       "classes": [
         "browserdevice720p"
