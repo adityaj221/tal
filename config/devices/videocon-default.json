@@ -1,0 +1,196 @@
+{
+  "pageStrategy": "html5",
+  "modules": {
+    "base": "antie/devices/browserdevice",
+    "modifiers": [
+      "antie/devices/anim/styletopleft",
+      "antie/devices/mediaplayer/html5",
+      "antie/devices/mediaplayer/live/none",
+      "antie/devices/data/nativejson",
+      "antie/devices/storage/cookie",
+      "antie/devices/logging/onscreen",
+      "antie/devices/logging/xhr",
+      "antie/devices/logging/jstestdriver",
+      "antie/devices/exit/closewindow",
+      "antie/devices/parentalguidance/appdefaultpghandler"
+    ]
+  },
+  "logging": {
+    "level": "none"
+  },
+  "streaming": {
+    "video": {
+      "mediaURIFormat": "%href%",
+      "supported": [
+        {
+          "protocols": [
+            "http"
+          ],
+          "encodings": [
+            "h264"
+          ],
+          "transferFormat": [
+            "hls",
+            "plain"
+          ],
+          "maximumBitRate": 3600,
+          "maximumVideoLines": 1080
+        }
+      ]
+    },
+    "audio": {
+      "mediaURIFormat": "%href%",
+      "supported": [
+        {
+          "protocols": [
+            "http"
+          ],
+          "encodings": [
+            "aac"
+          ],
+          "maximumBitRate": 192
+        }
+      ]
+    }
+  },
+  "input": {
+    "map": {
+      "8":"BACKSPACE",
+      "9":"TAB",
+      "13":"ENTER",
+      "16":"SHIFT",
+      "17":"CTRL",
+      "18":"ALT",
+      "19":"PAUSE",
+      "20":"CAPS_LOCK",
+      "27":"ESC",
+      "32":"SPACE",
+      "33":"PAGE_UP",
+      "34":"PAGE_DOWN",
+      "35":"END",
+      "36":"HOME",
+      "37":"LEFT",
+      "38":"UP",
+      "39":"RIGHT",
+      "40":"DOWN",
+      "45":"INSERT",
+      "46":"DELETE",
+      "48":"KEY0",
+      "49":"KEY1",
+      "50":"KEY2",
+      "51":"KEY3",
+      "52":"KEY4",
+      "53":"KEY5",
+      "54":"KEY6",
+      "55":"KEY7",
+      "56":"KEY8",
+      "57":"KEY9",
+      "65":"ALPHA_A",
+      "66":"ALPHA_B",
+      "67":"ALPHA_C",
+      "68":"ALPHA_D",
+      "69":"ALPHA_E",
+      "70":"ALPHA_F",
+      "71":"ALPHA_G",
+      "72":"ALPHA_H",
+      "73":"ALPHA_I",
+      "74":"ALPHA_J",
+      "75":"ALPHA_K",
+      "76":"ALPHA_L",
+      "77":"ALPHA_M",
+      "78":"ALPHA_N",
+      "79":"ALPHA_O",
+      "80":"ALPHA_P",
+      "81":"ALPHA_Q",
+      "82":"ALPHA_R",
+      "83":"ALPHA_S",
+      "84":"ALPHA_T",
+      "85":"ALPHA_U",
+      "86":"ALPHA_V",
+      "87":"ALPHA_W",
+      "88":"ALPHA_X",
+      "89":"ALPHA_Y",
+      "90":"ALPHA_Z",
+      "91":"LEFT_WIN",
+      "92":"RIGHT_WIN",
+      "93":"SELECT",
+      "96":"NUMKEY0",
+      "97":"NUMKEY1",
+      "98":"NUMKEY2",
+      "99":"NUMKEY3",
+      "100":"NUMKEY4",
+      "101":"NUMKEY5",
+      "102":"NUMKEY6",
+      "103":"NUMKEY7",
+      "104":"NUMKEY8",
+      "105":"NUMKEY9",
+      "106":"MULTIPLY",
+      "107":"ADD",
+      "109":"SUBTRACT",
+      "110":"DECIMAL",
+      "111":"DIVIDE",
+      "112":"F1",
+      "113":"F2",
+      "114":"F3",
+      "115":"F4",
+      "116":"F5",
+      "117":"F6",
+      "118":"F7",
+      "119":"F8",
+      "120":"F9",
+      "121":"F10",
+      "122":"F11",
+      "123":"F12",
+      "144":"NUM_LOCK",
+      "145":"SCROLL_LOCK",
+      "186":"SEMI_COLON",
+      "187":"EQUAL",
+      "188":"COMMA",
+      "189":"DASH",
+      "190":"PERIOD",
+      "191":"FORWARD_SLASH",
+      "192":"GRAVE_ACCENT",
+      "219":"OPEN_BRACKET",
+      "220":"BACK_SLASH",
+      "221":"CLOSE_BRACKET",
+      "222":"SINGLE_QUOTE",
+      "403":"KEYRED",
+      "404":"KEYGREEN",
+      "405":"KEYYELLOW",
+      "406":"KEYBLUE",
+      "457":"KEYINFO",
+      "461":"BACK",
+      "462":"MENU"
+    }
+  },
+  "accessibility": {
+    "captions": {
+      "supported": [
+        "application/ttaf+xml"
+      ]
+    }
+  },
+  "layouts": [
+    {
+      "width": 960,
+      "height": 540,
+      "module": "%application%/appui/layouts/540p",
+      "classes": [
+        "browserdevice540p"
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "module": "%application%/appui/layouts/720p",
+      "classes": [
+        "browserdevice720p"
+      ]
+    }
+  ],
+  "networking": {
+    "supportsJSONP": true
+  },
+  "capabilities": [],
+  "statLabels": {}
+}
